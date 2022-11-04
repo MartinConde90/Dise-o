@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            font-size: 14px;
+        }
+        p::first-letter{
+            font-size: 2em;
+            color: red;
+        }
+        p::first-line{
+            text-transform: uppercase;
+            background-color: aliceblue;
+        }
+        p:first-child{
+            text-align: center;
+        }
+        div h4:first-child{
+            color: blue;
+        }
+        p.errores:before{
+            content: "ERRORES COMUNES";
+        }
+        p.ejemplo:after{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 50px;
+            border: 1px solid green;
+            background: linear-gradient(green, yellow);
+        }
+
+    </style>
+</head>
+<body>
+    <p>Probando pseudo-elementos</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deleniti iusto libero nemo dolores ipsum expedita dolore eligendi quos reiciendis,
+         est debitis non perferendis id autem porro pariatur delectus, a minima.
+    </p>
+    <div>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas repellat provident eligendi totam, consequuntur possimus laudantium placeat voluptatem, sapiente ducimus iure porro omnis dicta voluptates ad eos neque cum.</h4>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas repellat provident eligendi totam, consequuntur possimus laudantium placeat voluptatem, sapiente ducimus iure porro omnis dicta voluptates ad eos neque cum.</h4>
+    </div>
+    <p class="errores">Contido do parrafo errores...</p>
+    <p class="ejemplo">Contido do parrafo ejemplo...</p>
+    
+</body>
+</html>

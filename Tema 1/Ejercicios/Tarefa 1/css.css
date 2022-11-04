@@ -1,0 +1,30 @@
+.h1{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #8DB5D6;
+    font-style: italic;
+    text-align: center;
+    padding: 14px;
+    margin-top: -8px;
+    width: 100%;
+    margin-left: -8px;
+}
+.tienda{
+    float: left;
+    width: 25%;
+    background-color: rgb(66, 120, 145);
+}
+.carrito{
+    float: left;
+    width: 25%;
+    background-color: rgb(66, 120, 145);
+}
+.contacto{
+    float: left;
+    width: 25%;
+    background-color: rgb(66, 120, 145);
+}
+.blog{
+    float: left;
+    width: 25%;
+    background-color: rgb(66, 120, 145);
+}

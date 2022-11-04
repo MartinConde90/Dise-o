@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tabla1, #tabla2{
+            margin: auto;
+        }
+        #primera>tr>:first-child{
+            background-color: orangered;
+            box-shadow: 2px 2px 3px black;
+            color: white;
+
+        }
+        #primera>tr:not(:first-child)>td:not(:first-child) {
+            border: 1px solid;
+        }
+        .tr1>td{   
+            color: white;
+            background-color: orangered !important;
+            box-shadow: 2px 2px 3px black;
+        }
+        #primera>tr>td{
+            text-align: center;
+        }
+        
+        #tit1{
+            color: orangered;
+            font-size: 25px;
+        }
+        #tabla1{
+            background-color: rgb(211, 209, 209);
+            border: 1px solid;
+        }
+
+
+
+
+        #segunda>tr>:first-child{
+            background-color: orangered;
+            box-shadow: 2px 2px 3px black;
+            color: white;
+
+        }
+        #segunda>tr>:first-child{
+            background-color: rgb(182, 179, 179);
+            color: white;
+        }
+        #tr2{
+            background-color: rgb(182, 179, 179);
+            color: white;
+            box-shadow: 2px 2px 3px black;
+        }
+        #tit2{
+            color: grey;
+            font-size: 25px;
+        }
+        #segunda>tr>td:not(:first-child){
+            text-align: right;
+        }
+
+        #segunda>tr:not(:first-child):nth-child(even)>td:not(:first-child) { background: rgb(185, 184, 184); }
+        #segunda>tr:not(:first-child):nth-child(odd)>td:not(:first-child) { background: rgb(241, 241, 241);}
+
+        #tabla2{
+            border: 1px solid;
+        }
+        #segunda>tr>td:not(:first-child){
+            width: 70px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<table id="tabla1" cellspacing="15px">
+    <caption id="tit1">Título de la tabla</caption>
+    <tbody id="primera">
+        <tr class="tr1">
+            <td>...</td>
+            <td>Columna 1</td>
+            <td>Columna 2</td>
+            <td>Columna 3</td>
+        </tr>
+        <tr>
+            <td>Fila1 1</td>
+            <td>celda 11</td>
+            <td>celda 12</td>
+            <td>celda 13</td>
+        </tr>
+        <tr>
+            <td>Fila2 </td>
+            <td>celda 21</td>
+            <td>celda 22</td>
+            <td>celda 23</td>
+        </tr>
+        <tr>
+            <td>Fila 3</td>
+            <td>celda 31</td>
+            <td>celda 32</td>
+            <td>celda 33</td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="tabla2">
+    <caption id="tit2">Indice de Precio de Consumo</caption>
+    <tbody id="segunda">
+        <tr id="tr2">
+            <td></td>
+            <td>2012M03</td>
+            <td>2012M02</td>
+            <td>2012M01</td>
+            <td>2012M03</td>
+            <td>2012M02</td>
+            <td>2012M01</td>
+        </tr>
+        
+        <tr>
+            <td>General</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Alimentos y bebidas</td>
+            <<td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Alcohólicas y tabaco</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Vestido y calzado</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Vivienda</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Menaje</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Medicina</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Transporte</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Comunicaciones</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Ocio y cultura</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Enseñanza</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Hoteles,...</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+        <tr>
+            <td>Otros servicios</td>
+            <td>101,055</td>
+            <td>100,38</td>
+            <td>100,275</td>
+            <td>0,7</td>
+            <td>0,1</td>
+            <td>-1,1</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+</body>
+</html>
