@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de viajes viajeros</title>
+    <style>
+        #globo{
+            width: 30px;
+        }
+        body{
+            background-color: rgb(53, 53, 65);
+        }
+        h2{
+            color: white;
+            margin-left: 50px;
+            font-size: 50px;
+        }
+        #linea{
+            width: 45%;
+            background-color: white;
+            height: 5px;
+            margin-left: 50px;
+        }
+        ul{
+            list-style: none;
+            margin-left: 60px;
+            display: flex;
+            flex-direction: row;
+        }
+        ul li a{
+            color: white;
+            display: block;  /*IMPORTANTE*/
+            padding: .3em .3em .3em .3em;
+            text-decoration: none; /*IMPORTANTE*/
+            font-size: 45px;
+        }
+        @font-face {
+            font-family: "MiMenu";
+            src: url("LigatureSymbols-2.11.woff");
+        }
+
+        [class^="icon-"], [class*="icon-"] {
+            margin-right: 3px;
+            font-family: "Mimenu";
+            font-style: normal;
+            font-size: calc(130%);
+            margin-right: 20px;
+        }
+        .icon-inicio::before {
+            content: "\E072";
+        }
+        .icon-planes::before {
+            content: "\E173";
+        }
+        .icon-galeria::before {
+            content: "\E026";
+        }
+        .lista>li{
+            float: left;
+        }
+        #foto{
+            display: block;
+            width: 50%;
+            margin-left: 50px;
+        }
+        .imagen{
+            display: flex;
+            flex-direction: column;
+        }
+        p{
+            color: white;
+            width: 50%;
+            padding-top: 30px;
+            margin-left: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <h2>Viajer<img id="globo" src="globo.png">s</h2>
+    
+    <div id="linea"></div>
+
+    <ul class="lista">
+        <li><a href="menu.html"><i class="icon-inicio"></i>Inicio</a></li>
+        <li><a href="planes.html"><i class="icon-planes"></i>Planes</a></li>
+        <li><a href="menu.html"><i class="icon-galeria"></i>Galería</a></li>
+    </ul>
+
+
+    <div class="imagen">
+        <img id="foto" src="puerto_el_salvador.jpg">
+        <p>Viajeros es la mejor agencia de viajes de El Salvador.
+            Te ofrecemos cobertura total a todos los lugares turisticos del país.
+            Tenemos planes turisticos que se adaptan a tu bolsillo, tiempo y gustos.
+            Deja de perder el tiempo, y confia tu diversión a los expertos.
+        </p>
+    </div>
+    
+    
+</body>
+</html>
