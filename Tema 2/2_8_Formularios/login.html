@@ -6,6 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        @font-face {
+            font-family: "MiMenu";
+            src: url("LigatureSymbols-2.11.woff");
+        }
+
+        [class^="icon-"], [class*="icon-"] {
+            margin-right: 3px;
+            font-family: "Mimenu";
+            font-style: normal;
+            font-size: calc(130%);
+            margin-right: 20px;
+        }
+        .icon-usuario::before {
+            content: "\E137";
+        }
+        .icon-contra::before {
+            content: "\E086";
+        }
+        .icon-face::before {
+            content: "\E047";
+            float: left;
+        }
+        .icon-twitt::before {
+            content: "\E12f";
+        }
+
         body{
             background-color: #294072;
         }
@@ -45,7 +72,7 @@
             font-size: 25px;
         }
         .face{
-            width: 45%;
+            /*width: 45%;*/
             background-color: #3b5a9a;
             color: white;
             border-radius: 2px;
@@ -103,9 +130,9 @@
         <h2>Inicio de sesión</h2>
 
         <form>
-            <input type="text" class="inpt" id="name" name="name" placeholder="Nombre de usuario">
+            <input type="text" class="inpt icon-usuario" id="name" name="name" placeholder="&#xE137; Nombre de usuario">
             <br>
-            <input type="text" class="inpt" id="contra" name="contra" placeholder="Contraseña">
+            <input type="text" class="inpt icon-contra" id="contra" name="contra" placeholder="&#xE086; Contraseña">
             <br>
             <button class="boton"><a href="perfil.html">Iniciar sesion</a></button>
             <label class="container">
@@ -114,8 +141,8 @@
                 Recordarme
             </label>
             <a class="contra "href="">¿Has olvidado tu contraseña?</a>
-            <button class="face">Loguearme con Facebook</button>
-            <button class="twitt">Loguearme con Twitter</button>
+            <button class="face"><i class="icon-face"></i>Loguearme con Facebook</button>
+            <button class="twitt"><i class="icon-twitt"></i>Loguearme con Twitter</button>
         </form>
         <div class="footer">
             <a class="cuenta" href="">¿No tienes cuenta?</a>

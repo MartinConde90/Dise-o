@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin-left: 43px;
+            margin-top: 30px;
+        }
+        h2{
+            color: white;
+        }
+        .recuadro{
+            background-color: rgb(37, 37, 37);
+            width: 1000px;
+            height: 95%;
+            border-radius: 10px;
+            margin: 0 auto;
+            box-shadow: 26px 27px 13px grey;
+        }
+        .formularios{
+            display: flex;
+            color: white; 
+            justify-content: center;
+        }
+        fieldset{
+            border-radius: 5px;
+        }
+        .field1{
+            width: 370px;
+        }
+        .field2{
+            width: 230px;
+        }
+        .field3{
+            width: 230px;
+        }
+
+        .div1>input{
+            margin-bottom: 10px;
+        }
+        #p{
+            margin-bottom: 0px;
+        }
+        textarea{
+            color: black;
+        }
+        button{
+            background-color: olive;
+            padding: 10px;
+            border-radius: 15px;
+            margin-left: 65%;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            color: white;
+        }
+        .div1>div{
+            width: 88px;
+            margin: 0;
+        }
+        .div1>input{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="recuadro">
+            <img src="img.jpg" width="48" height="48">
+            <h2>Perfil</h2>
+            <div class="formularios">
+                <fieldset class="field1">
+                    <legend>Datos</legend> 
+                    <div class="div1">
+                        <div>
+                            <label>fecha de nacimiento</label>
+                        </div>
+                        <input type="date" id="fecha" name="fecha">
+                        <br>
+
+                        <div>
+                            <label>ingrese su foto:</label>
+                        </div>
+                        <input type="file" id="archivo" name="archivo">
+                        <br>
+
+                        <div>
+                        <label>Nacionalidad</label>
+                        </div>
+                        <input type="text" id="text" name="text">
+                        <br>
+
+                        <div>
+                        <label>Color favorito</label>
+                        </div>
+                        <input type="color" id="color" name="color">
+                        <br>
+
+                        <div>
+                        <label>Sexo</label>
+                        </div>
+                        <input type="radio" id="sexo" name="sexo" value="masc" checked><label>Masculino</label><br>
+                        <input type="radio" id="sexo" name="sexo" value="fem"><label>Femenino</label>
+                        <br>
+
+                        <div>
+                        <label>Dirección</label>
+                        </div>
+                        <textarea id="area" name="area" rows="4" cols="20"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="field2">
+                    <legend>Temas</legend> 
+                    <div>
+                        <p>Elija tema de interés:</p>
+                        <input type="radio" id="ciencia" name="ciencia" value="fem" checked><label>Ciencia</label>
+                        <br>
+                        <input type="radio" id="arte" name="arte" value="fem"><label>Arte</label>
+                        <br>
+                        <input type="radio" id="literatura" name="literatura" value="fem"><label>Literatura</label>
+                        <br>
+                        <input type="radio" id="tecnologia" name="tecnologia" value="fem"><label>Tecnologia</label>
+                        <br>
+                        <input type="radio" id="musica" name="musica" value="fem"><label>Música</label>
+                        <br>
+                        <input type="radio" id="indivatica" name="indivatica" value="fem"><label>Indivática</label>
+                        <br>
+                        <p id="p">Libros y artículos de tu interes:</p>
+                        <textarea id="area2" name="area2" rows="4" cols="20" 
+                            placeholder="macarrones con queso&#10;cocacolas adobadas&#10;pizza de anchoas&#10;chorizo de calabaza"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="field3">
+                    <legend>Aficiones</legend> 
+                    <div>
+                        <p>Elija su pasatiempo:</p>
+                        <input type="checkbox" id="deporte" name="deporte" value="deporte" checked>
+                        <label for="deporte">Deporte</label><br>
+
+                        <input type="checkbox" id="musica" name="musica" value="musica">
+                        <label for="musica">Música</label><br>
+
+                        <input type="checkbox" id="lectura" name="lectura" value="lectura">
+                        <label for="lectura">Lectura</label><br>
+
+                        <input type="checkbox" id="pesca" name="pesca" value="pesca">
+                        <label for="pesca">Pesca</label><br>
+
+                        <input type="checkbox" id="pasear" name="pasear" value="pasear">
+                        <label for="pasear">Pasear</label><br>
+
+                        <input type="checkbox" id="cine" name="cine" value="cine">
+                        <label for="vcine">Cine</label><br>
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" form="form" value="Submit">Enviar información</button>
+        </div>
+    </form>
+</body>
+</html>
