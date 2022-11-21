@@ -12,6 +12,9 @@
         }
         h2{
             color: white;
+            width: 60px;
+            margin-left: 101px;
+            margin-top: -30px;
         }
         .recuadro{
             background-color: rgb(37, 37, 37);
@@ -30,7 +33,7 @@
             border-radius: 5px;
         }
         .field1{
-            width: 370px;
+            width: 400px;
         }
         .field2{
             width: 230px;
@@ -58,58 +61,75 @@
             color: white;
         }
         .div1>div{
-            width: 88px;
+            width: 100%;
             margin: 0;
         }
-        .div1>input{
-            float: left;
+        #sexf{
+            margin-left: 46px;
         }
+        .direccion{
+            display: flex;
+            align-items: center;
+        }
+        
     </style>
 </head>
 <body>
     <form>
         <div class="recuadro">
-            <img src="img.jpg" width="48" height="48">
-            <h2>Perfil</h2>
+            <div>
+                <img src="img.jpg" width="48" height="48">
+                <h2>Perfil</h2>
+            </div>
+            
             <div class="formularios">
                 <fieldset class="field1">
                     <legend>Datos</legend> 
                     <div class="div1">
                         <div>
-                            <label>fecha de nacimiento</label>
+                            <label>Fecha de nacimiento:</label>
+                            <input type="date" id="fecha" name="fecha">
                         </div>
-                        <input type="date" id="fecha" name="fecha">
+                        
                         <br>
 
                         <div>
-                            <label>ingrese su foto:</label>
+                            <label>Ingrese su foto:</label>
+                            <input type="file" id="archivo" name="archivo">
                         </div>
-                        <input type="file" id="archivo" name="archivo">
+                        
                         <br>
 
                         <div>
-                        <label>Nacionalidad</label>
-                        </div>
+                        <label>Nacionalidad:</label>
                         <input type="text" id="text" name="text">
+                        </div>
+                        
                         <br>
 
                         <div>
-                        <label>Color favorito</label>
-                        </div>
+                        <label>Color favorito:</label>
                         <input type="color" id="color" name="color">
+                        </div>
+                        
                         <br>
 
                         <div>
-                        <label>Sexo</label>
+                        <label>Sexo:</label>
+                        
+                            <input type="radio" id="sexm" name="sexo" value="masc" checked><label>Masculino</label><br>
+                            <input type="radio" id="sexf" name="sexo" value="fem"><label>Femenino</label>
+                        
+                        
                         </div>
-                        <input type="radio" id="sexo" name="sexo" value="masc" checked><label>Masculino</label><br>
-                        <input type="radio" id="sexo" name="sexo" value="fem"><label>Femenino</label>
+                        
                         <br>
 
-                        <div>
-                        <label>Dirección</label>
-                        </div>
+                        <div class="direccion">
+                        <label>Dirección:</label>
                         <textarea id="area" name="area" rows="4" cols="20"></textarea>
+                        </div>
+                        
                     </div>
                 </fieldset>
 
@@ -123,15 +143,15 @@
                         <br>
                         <input type="radio" id="literatura" name="literatura" value="fem"><label>Literatura</label>
                         <br>
-                        <input type="radio" id="tecnologia" name="tecnologia" value="fem"><label>Tecnologia</label>
+                        <input type="radio" id="tecnologia" name="tecnologia" value="fem"><label>Tecnología</label>
                         <br>
                         <input type="radio" id="musica" name="musica" value="fem"><label>Música</label>
                         <br>
-                        <input type="radio" id="indivatica" name="indivatica" value="fem"><label>Indivática</label>
+                        <input type="radio" id="indivatica" name="indivatica" value="fem"><label>Informática</label>
                         <br>
                         <p id="p">Libros y artículos de tu interes:</p>
                         <textarea id="area2" name="area2" rows="4" cols="20" 
-                            placeholder="macarrones con queso&#10;cocacolas adobadas&#10;pizza de anchoas&#10;chorizo de calabaza"></textarea>
+                            placeholder="macarrones con queso&#10;cocacolas adobadas&#10;pizza con anchoas&#10;chorizo de calabaza"></textarea>
                     </div>
                 </fieldset>
 
